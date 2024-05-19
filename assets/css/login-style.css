@@ -126,3 +126,15 @@ button:hover {
 .create-account-link {
     margin: 20px;
 }
+
+.error-message {
+    color: red;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}

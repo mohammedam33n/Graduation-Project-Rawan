@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/introduction-page-2.css">
+    <title>Page 2</title>
+</head>
+
+<body>
+
+    <!-- Introduction Page 2 -->
+    <div class="app">
+
+        <header class="app-header">
+            <button class="app-header-btn btn-skip">
+                Skip
+            </button>
+        </header>
+
+        <main class="app-body">
+
+            <section class="section">
+                <img src="/assets/images/svg/car-motorly-user.svg" alt="Red Car">
+            </section>
+
+            <div class="section-header">
+                <h2 class="section-title">
+
+                    <span>With Trippa</span> for your <br> you are the leader.
+                </h2>
+            </div>
+
+            <div class="section-body">
+                <p>Select your destination, and we'll take care of the rest.</p>
+            </div>
+        </main>
+
+        <footer class="app-footer">
+            <a href="/introduction/page-3" class="menu-bar-item skip-icon btn-skip-link">
+                <img src="/assets/images/svg/skip.svg" alt="Skip Icon">
+            </a>
+        </footer>
+
+    </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var skipButton = document.querySelector('.btn-skip');
+            if (skipButton) {
+                skipButton.addEventListener('click', function (event) {
+                    event.preventDefault();
+
+                    window.location.href = '/introduction/page-3';
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

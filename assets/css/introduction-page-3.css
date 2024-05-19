@@ -80,7 +80,18 @@ img {
     background: transparent;
     border: none;
     cursor: pointer;
+    /* text-decoration: none; */
+    display: inline-block;
 }
+
+
+/* .btn-skip:hover {
+    text-decoration: underline;
+}
+
+.btn-skip:focus {
+    text-decoration: underline;
+} */
 
 .section {
     margin-top: 2rem;

@@ -80,7 +80,18 @@ img {
     background: transparent;
     border: none;
     cursor: pointer;
+    /* text-decoration: none; */
+    /* display: inline-block; */
 }
+
+
+/* .btn-skip:hover {
+    text-decoration: underline;
+}
+
+.btn-skip:focus {
+    text-decoration: underline;
+} */
 
 .section {
     margin-top: 2rem;
@@ -92,6 +103,11 @@ img {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 2.5rem;
+}
+
+.section-logo {
+    text-align: center;
+    margin: 100px;
 }
 
 .section-title {

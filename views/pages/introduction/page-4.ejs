@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/introduction-page-4.css">
+    <title>Page 4</title>
+</head>
+
+<body>
+
+    <!-- Introduction Page 4 -->
+    <div class="app">
+
+        <header class="app-header">
+            <button class="app-header-btn btn-skip btn-skip-link">
+                Skip
+            </button>
+        </header>
+
+        <main class="app-body">
+
+            <section class="section-logo">
+                <img src="/assets/images/svg/logo-2.svg" alt="Red Car">
+            </section>
+
+        </main>
+
+        <footer class="app-footer">
+            <section class="section">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span>Get ready</span> for your <br> journey with us.
+                    </h2>
+                </div>
+
+                <div class="section-body">
+                    <p>Select your destination, and we'll take care of the rest.</p>
+                </div>
+
+                <a href="/auth/login" class="menu-bar-item skip-icon btn-skip-link">
+                    <img src="/assets/images/svg/skip.svg" alt="Skip Icon">
+                </a>
+            </section>
+        </footer>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var skipButton = document.querySelector('.btn-skip-link');
+            if (skipButton) {
+                skipButton.addEventListener('click', function (event) {
+                    event.preventDefault();
+
+                    window.location.href = '/auth/login';
+                });
+            }
+        });
+    </script>
+
+</body>
+
+</html>

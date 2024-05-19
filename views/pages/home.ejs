@@ -1,0 +1,236 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/assets/css/home-style.css">
+
+    <title>
+        Home
+    </title>
+
+    <style>
+        .category-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .category-list-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+            background: rgba(248, 248, 253, 1);
+        }
+
+        .category-list-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .category {
+            margin-top: 10px;
+            /* Adjust the margin as needed */
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="app">
+
+
+        <header class="app-header">
+            <button class="app-header-btn app-header-btn--active">
+                <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor"
+                    viewBox="0 0 256 256">
+                    <rect width="256" height="256" fill="none"></rect>
+                    <line x1="40" y1="128" x2="216" y2="128" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="16"></line>
+                    <line x1="40" y1="64" x2="216" y2="64" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="16"></line>
+                    <line x1="40" y1="192" x2="216" y2="192" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="16"></line>
+                </svg>
+            </button>
+            <button class="app-header-btn app-header-btn--notification">
+                <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor"
+                    viewBox="0 0 256 256">
+                    <rect width="256" height="256" fill="none"></rect>
+                    <line x1="96" y1="224" x2="160" y2="224" fill="none" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="16"></line>
+                    <path
+                        d="M56.20305,104A71.899,71.899,0,0,1,128.5484,32.002c39.58967.29432,71.25651,33.20133,71.25651,72.90185V112c0,35.81563,7.49325,56.59893,14.093,67.95814A7.999,7.999,0,0,1,207.01628,192H48.98365A7.99908,7.99908,0,0,1,42.103,179.95641c6.60328-11.35959,14.1-32.1426,14.1-67.95641Z"
+                        fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="16"></path>
+                </svg>
+            </button>
+        </header>
+
+        <main class="app-body">
+            <section class="section">
+                <!-- <div class="section-header">
+
+                </div> -->
+                <ul class="product-list">
+                    <!-- ---------------------------------------- -->
+                    <li class="product-list-item">
+                        <article class="product">
+                            <div class="slider-image">
+                                <img src="/assets/images/ads/gradient.png" />
+                                <h2 class="title-center description">
+                                    Try Tripia scotr now at a 50% discount for the first trip
+                                </h2>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="product-list-item">
+                        <article class="product">
+                            <div class="slider-image">
+                                <img src="/assets/images/ads/gradient.png" />
+                                <h2 class="title-center description">
+                                    discount 90% for first trip
+                                </h2>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="product-list-item">
+                        <article class="product">
+                            <div class="slider-image">
+                                <img src="/assets/images/ads/gradient.png" />
+                                <h2 class="title-center description">
+                                    discount 90% for first trip
+                                </h2>
+                            </div>
+                        </article>
+                    </li>
+                    <!-- ---------------------------------------- -->
+
+                </ul>
+            </section>
+
+
+            <!-- ---------------------------------------- -->
+            <section class="section">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        What Are Your Plans Today ?
+                    </h2>
+                </div>
+
+                <ul class="category-list">
+                    <li class="category-list-item">
+                        <img src="/assets/images/svg/map.svg" alt="trip">
+                        <a href="#saving-trips" class="category">Saving Trips</a>
+                    </li>
+                    <li class="category-list-item">
+                        <img src="/assets/images/svg/location.svg" alt="trip">
+                        <a href="#starting-close-trips" class="category">Starting Close Trips</a>
+                    </li>
+                </ul>
+            </section>
+            <!-- ---------------------------------------- -->
+
+
+
+            <!-- ---------------------------------------- -->
+            <section class="section">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        Current Journeys
+                    </h2>
+                </div>
+
+                <!-- <ul class="category-list"> -->
+
+                <section class="section">
+                    <div class="section-body">
+                        <div class="card">
+                            <div class="card-content">
+
+                                <h2 class="center-title">
+                                    10/01/2024
+                                </h2>
+
+                                <span class="card-subtitle">
+
+                                </span>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- </ul> -->
+            </section>
+            <!-- ---------------------------------------- -->
+
+
+
+        </main>
+
+        <footer class="app-footer">
+            <nav class="menu-bar">
+
+                <!-- #################################################################### -->
+                <a href="#city" class="menu-bar-item menu-bar-item--active">
+                    <!--start svg city-->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor"
+                        viewBox="0 0 576 512">
+                    </svg>
+
+                    <!--end svg city-->
+                    <span class="menu-bar-item-text">
+                        My City
+                    </span>
+                </a>
+
+                <a href="#trip" class="menu-bar-item menu-bar-item--active">
+                    <!--start svg city-->
+                    <img src="/assets/images/svg/car.svg" alt="trip">
+
+                    <!--end svg city-->
+                    <span class="menu-bar-item-text">
+                        Trips
+                    </span>
+                </a>
+
+                <a href="#travel" class="menu-bar-item menu-bar-item--active">
+                    <!--start svg city-->
+                    <img src="/assets/images/svg/travel.svg" alt="travel">
+
+                    <!--end svg city-->
+                    <span class="menu-bar-item-text">
+                        Travel
+                    </span>
+                </a>
+
+                <a href="#setting" class="menu-bar-item menu-bar-item--active">
+                    <!--start svg city-->
+                    <img src="/assets/images/svg/setting.svg" alt="Setting">
+
+                    <!--end svg city-->
+                    <span class="menu-bar-item-text">
+                        Setting
+                    </span>
+                </a>
+
+                <!-- #################################################################### -->
+            </nav>
+        </footer>
+    </div>
+</body>
+
+</html>

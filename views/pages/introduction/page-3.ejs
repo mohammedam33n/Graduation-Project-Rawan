@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/introduction-page-3.css">
+    <title>Page 3</title>
+</head>
+
+<body>
+
+    <!-- Introduction Page 3 -->
+    <div class="app">
+
+        <header class="app-header">
+            <button class="app-header-btn btn-skip btn-skip-link">
+                Skip
+            </button>
+        </header>
+
+        <main class="app-body">
+            <section class="section">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span>Best price</span>, fastest time.
+                    </h2>
+                </div>
+
+                <div class="section-body">
+                    <p>We will deliver to you at the right time at the best price.</p>
+                </div>
+            </section>
+
+            <section class="section">
+                <img src="/assets/images/svg/red-car.svg" alt="Red Car">
+            </section>
+        </main>
+
+        <footer class="app-footer">
+            <a href="/introduction/page-4" class="menu-bar-item skip-icon btn-skip-link">
+                <img src="/assets/images/svg/skip.svg" alt="Skip Icon">
+            </a>
+        </footer>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var skipButton = document.querySelector('.btn-skip-link');
+            if (skipButton) {
+                skipButton.addEventListener('click', function (event) {
+                    event.preventDefault();
+
+                    window.location.href = '/introduction/page-4';
+                });
+            }
+        });
+    </script>
+
+</body>
+
+</html>

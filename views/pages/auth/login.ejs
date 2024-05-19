@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Log In
+    </title>
+    <link rel="stylesheet" href="/assets/css/login-style.css">
+</head>
+
+<body>
+    <div class="app">
+        <main class="app-body">
+            <section class="section">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="slider-image">
+                            <img src="/assets/images/logo.png" alt="Logo" />
+                            <h2 class="title-center text-color-grey">
+                                Log In
+                            </h2>
+                        </div>
+                        <div class="container">
+                            <div id="message"></div>
+                            <form id="loginForm" action="/auth/login" method="POST">
+                                <div class="form-group">
+                                    <input type="text" id="email" name="email" placeholder="Email">
+                                    <div id="emailError" class="error-message"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" id="password" name="password" placeholder="Password">
+                                    <div id="passwordError" class="error-message"></div>
+                                </div>
+                                <div class="title forget-password-link">
+                                    <a href="#forget-password" class="link-color-grey">
+                                        Forget your password
+                                    </a>
+                                </div>
+                                <button type="submit" class="btn-submit">
+                                    Login
+                                </button>
+                            </form>
+                        </div>
+                        <div class="title-center text-color-grey create-account-link">
+                            New with us?
+                            <a href="#create-account" class="link-color-grey">
+                                Create an account
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script>
+        const loginForm = document.getElementById('loginForm');
+        const messageDiv = document.getElementById('message');
+        const emailInput = document.getElementById('email');
+        const passwordInput = document.getElementById('password');
+        const emailErrorDiv = document.getElementById('emailError');
+        const passwordErrorDiv = document.getElementById('passwordError');
+
+        loginForm.addEventListener('submit', async function (event) {
+            event.preventDefault();
+
+            const formData = {
+                email: emailInput.value,
+                password: passwordInput.value
+            };
+
+            const responseData = await fetch('/auth/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+
+            const response = await responseData.json();
+
+            // Clear all error messages
+            emailErrorDiv.innerHTML = '';
+            passwordErrorDiv.innerHTML = '';
+            messageDiv.innerHTML = '';
+
+            if (response.success) {
+                messageDiv.innerHTML = `<p class="success">Login successful!<br>  Welcome, ${response.user.email}.</p>`;
+
+                // Remove error message after 3 seconds
+                setTimeout(() => {
+                    messageDiv.innerHTML = '';
+                }, 2000);
+
+                setTimeout(() => {
+                    window.location.href = '/home';
+                }, 3000);
+
+            } else {
+                if (response.errors) {
+                    response.errors.forEach(error => {
+                        if (error.param === 'email') {
+                            emailInput.classList.add('error-input');
+                            emailErrorDiv.innerHTML = `<p>${error.msg}</p>`;
+                        }
+                        if (error.param === 'password') {
+                            passwordInput.classList.add('error-input');
+                            passwordErrorDiv.innerHTML = `<p>${error.msg}</p>`;
+                        }
+                    });
+                } else {
+                    messageDiv.innerHTML = `<div class="error">${response.message}</div>`;
+                    // Remove error message after 3 seconds
+                    setTimeout(() => {
+                        messageDiv.innerHTML = '';
+                    }, 3000);
+                }
+            }
+        });
+
+        // Clear errors and messages on input change
+        emailInput.addEventListener('input', function () {
+            emailInput.classList.remove('error-input');
+            emailErrorDiv.innerHTML = '';
+            messageDiv.innerHTML = '';
+        });
+
+        passwordInput.addEventListener('input', function () {
+            passwordInput.classList.remove('error-input');
+            passwordErrorDiv.innerHTML = '';
+            messageDiv.innerHTML = '';
+        });
+    </script>
+</body>
+
+</html>
