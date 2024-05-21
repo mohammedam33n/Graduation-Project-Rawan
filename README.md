@@ -1,5 +1,4 @@
-================================================
-================================================
+
 
 ## Prerequisites ##
 Before you start, ensure you have the following installed:
@@ -73,12 +72,9 @@ Before you start, ensure you have the following installed:
 - Email: `test@example.com`
 - Password: `password`
 
-================================================
-================================================
+
 
 ## Figma ##
 Add relevant Figma links or details here.
 - [Figma](https://www.figma.com/design/Z3nEk4JK3vR3m5TFr066d5/TRIPIA-FINAL)
 
-================================================
-================================================
