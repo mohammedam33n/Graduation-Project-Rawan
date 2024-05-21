@@ -10,7 +10,7 @@ Before you start, ensure you have the following installed:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/your-project.git
+    git clone https://github.com/mohammedam33n/node-app
     cd your-project
     ```
 
@@ -78,6 +78,7 @@ Before you start, ensure you have the following installed:
 
 ## Figma ##
 Add relevant Figma links or details here.
+- [Figma](https://www.figma.com/design/Z3nEk4JK3vR3m5TFr066d5/TRIPIA-FINAL)
 
 ================================================
 ================================================
