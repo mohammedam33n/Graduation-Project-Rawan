@@ -10,7 +10,7 @@ Before you start, ensure you have the following installed:
 1. **Clone the repository**:
     ```bash
     git clone https://github.com/mohammedam33n/node-app
-    cd your-project
+    cd node-app
     ```
 
 2. **Install dependencies**:
@@ -38,15 +38,10 @@ Before you start, ensure you have the following installed:
 
 2. **Start the production server**:
     ```bash
-    npm start
+    node app.js
     ```
 
 ## Testing ##
-
-1. **Run tests**:
-    ```bash
-    npm test
-    ```
 
 ## API Endpoints ##
 
