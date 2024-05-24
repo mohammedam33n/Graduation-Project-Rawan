@@ -71,7 +71,8 @@ body {
 .form-group input {
     width: 80%;
     padding: 0.5rem;
-    border: 1px solid #ccc;
+    border: 1px solid #D9D9D95E;
+    /* background-color: rgba(128, 128, 128, 0.601); */
     border-radius: 10px;
 }
 
@@ -127,22 +128,55 @@ button:hover {
     height: auto;
 }
 
-.forget-password-link {
-    margin-left: 38px;
+
+.input-container {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    background-color: #D9D9D95E;
 }
 
-.create-account-link {
-    margin: 20px;
+
+
+.icon {
+    padding: 8px;
+    /* background: rgba(128, 128, 128, 0.51); */
+    color: #D9D9D95E;
+    /* min-width: 50px; */
+    /* text-align: center; */
 }
 
-.error-message {
-    color: red;
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: #D9D9D95E;
+
+    padding: 10px;
+    /* border: none; */
+    border-top: none;
+    border-left: 2px solid #D9D9D95E;
+    border-right: 2px solid #D9D9D95E;
+    border-bottom: 2px solid #D9D9D95E;
+    /* Remove all borders */
+    outline: none;
+    /* Remove the outline */
+    cursor: pointer;
+    background-color: transparent;
+    /* Make the background transparent if needed */
+
 }
 
-.error {
-    color: red;
-}
 
-.success {
-    color: green;
+
+
+.btn-submit {
+    border-radius: 30px;
 }
