@@ -182,7 +182,7 @@
             <nav class="menu-bar">
 
                 <!-- #################################################################### -->
-                <a href="javascript:void(0)" class="menu-bar-item menu-bar-item--active click-home">
+                <a href="javascript:void(0)" class="menu-bar-item menu-bar-item--active">
                     <!--start svg city-->
                     <img src="/assets/images/svg/home-black.svg" alt="home">
 
@@ -233,10 +233,6 @@
             window.location.href = '/setting';
         }
 
-        function renderForHomePage() {
-            window.location.href = '/home';
-        }
-
         document.querySelectorAll('.click-setting').forEach(function (element) {
             element.addEventListener('click', function () {
                 // ------------------------------------------
@@ -246,13 +242,7 @@
         });
 
 
-        document.querySelectorAll('.click-home').forEach(function (element) {
-            element.addEventListener('click', function () {
-                // ------------------------------------------
-                renderForHomePage();
-                // ------------------------------------------
-            });
-        });
+
     </script>
 </body>
 
