@@ -18,8 +18,13 @@
                     <div class="card-content">
                         <div class="slider-image">
                             <img src="/assets/images/profile.png" alt="Logo" />
+                            <div id="message" style="display: none; color: green; margin-top: 10px;">
+                                Data has been updated successfully.
+                            </div>
                         </div>
                         <div class="container">
+
+
                             <div id="loginForm">
 
                                 <div class="input-container">
@@ -42,10 +47,12 @@
                                     <input class="input-field" type="text" value="Giza,Cairo" readonly>
                                 </div>
 
-                                <button type="submit" class="btn-submit">
+                                <button type="submit" class="btn-submit btn-save">
                                     Save
                                 </button>
                             </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -53,6 +60,27 @@
         </main>
     </div>
 
+    <script>
+
+        function renderForSettingPage() {
+            window.location.href = '/setting';
+        }
+
+
+        document.querySelectorAll('.btn-save').forEach(function (element) {
+            element.addEventListener('click', function () {
+                // ------------------------------------------
+                // Show the update message
+                document.getElementById('message').style.display = 'block';
+
+                // Redirect after 3 seconds
+                setTimeout(renderForSettingPage, 2000);
+                // ------------------------------------------
+            });
+        });
+
+
+    </script>
 </body>
 
 </html>

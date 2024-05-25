@@ -11,7 +11,7 @@
     </title>
 
 
-    <title>Document</title>
+    <title>Home</title>
 </head>
 
 <body>
@@ -155,19 +155,17 @@
             <nav class="menu-bar">
 
                 <!-- #################################################################### -->
-                <a href="#city" class="menu-bar-item menu-bar-item--active">
+                <a href="javascript:void(0)" class="menu-bar-item menu-bar-item--active click-home">
                     <!--start svg city-->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor"
-                        viewBox="0 0 576 512">
-                    </svg>
+                    <img src="/assets/images/svg/home-black.svg" alt="home">
 
-                    <!--end svg city-->
-                    <span class="menu-bar-item-text">
-                        My City
+                    <!--end svg home-->
+                    <span class="menu-bar-item-text text-color-black">
+                        Home
                     </span>
                 </a>
 
-                <a href="#trip" class="menu-bar-item menu-bar-item--active">
+                <a href="javascript:void(0)" class="menu-bar-item menu-bar-item--active">
                     <!--start svg city-->
                     <img src="/assets/images/svg/car.svg" alt="trip">
 
@@ -177,7 +175,7 @@
                     </span>
                 </a>
 
-                <a href="#travel" class="menu-bar-item menu-bar-item--active">
+                <a href="javascript:void(0)" class="menu-bar-item menu-bar-item--active">
                     <!--start svg city-->
                     <img src="/assets/images/svg/travel.svg" alt="travel">
 
@@ -187,7 +185,7 @@
                     </span>
                 </a>
 
-                <a href="/setting" class="menu-bar-item menu-bar-item--active">
+                <a href="javascript:void(0)" class="menu-bar-item menu-bar-item--active click-setting">
                     <!--start svg city-->
                     <img src="/assets/images/svg/setting.svg" alt="Setting">
 
@@ -201,6 +199,34 @@
             </nav>
         </footer>
     </div>
+
+    <script>
+
+        function renderForSettingPage() {
+            window.location.href = '/setting';
+        }
+
+        function renderForHomePage() {
+            window.location.href = '/home';
+        }
+
+        document.querySelectorAll('.click-setting').forEach(function (element) {
+            element.addEventListener('click', function () {
+                // ------------------------------------------
+                renderForSettingPage();
+                // ------------------------------------------
+            });
+        });
+
+
+        document.querySelectorAll('.click-home').forEach(function (element) {
+            element.addEventListener('click', function () {
+                // ------------------------------------------
+                renderForHomePage();
+                // ------------------------------------------
+            });
+        });
+    </script>
 </body>
 
 </html>
