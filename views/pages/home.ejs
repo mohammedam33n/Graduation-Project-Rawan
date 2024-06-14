@@ -11,7 +11,7 @@
 <body>
     <div class="app">
         <header class="app-header">
-            <button class="app-header-btn app-header-btn--active" aria-label="Menu">
+            <button class="app-header-btn app-header-btn--active" aria-label="Open menu">
                 <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor"
                     viewBox="0 0 256 256" aria-hidden="true">
                     <rect width="256" height="256" fill="none"></rect>
@@ -23,7 +23,7 @@
                         stroke-linejoin="round" stroke-width="16"></line>
                 </svg>
             </button>
-            <button class="app-header-btn app-header-btn--notification" aria-label="Notifications">
+            <button class="app-header-btn app-header-btn--notification" aria-label="View notifications">
                 <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor"
                     viewBox="0 0 256 256" aria-hidden="true">
                     <rect width="256" height="256" fill="none"></rect>
@@ -38,14 +38,13 @@
         </header>
 
         <main class="app-body">
-
             <section class="section">
-                <!-- ---------------------------------------- -->
                 <ul class="product-list">
                     <li class="product-list-item">
                         <article class="product">
                             <div class="slider-image">
-                                <img src="/assets/images/ads/gradient.png" alt="Scooter ad with 50% discount" />
+                                <img src="/assets/images/car/scooter.jpeg"
+                                    alt="Scooter advertisement with 50% discount" />
                                 <h2 class="title-center description text-color-red">
                                     Try Tripia scooter now at a 50% discount for the first trip
                                 </h2>
@@ -55,9 +54,10 @@
                     <li class="product-list-item">
                         <article class="product">
                             <div class="slider-image">
-                                <img src="/assets/images/ads/gradient.png" alt="Scooter ad with 90% discount" />
-                                <h2 class="title-center description">
-                                    Discount 90% for first trip
+                                <img src="/assets/images/car/scooter.jpeg"
+                                    alt="Scooter advertisement with 50% discount" />
+                                <h2 class="title-center description text-color-red">
+                                    Try Tripia scooter now at a 50% discount for the first trip
                                 </h2>
                             </div>
                         </article>
@@ -65,43 +65,38 @@
                     <li class="product-list-item">
                         <article class="product">
                             <div class="slider-image">
-                                <img src="/assets/images/ads/gradient.png" alt="Scooter ad with 90% discount" />
-                                <h2 class="title-center description">
-                                    Discount 90% for first trip
+                                <img src="/assets/images/car/scooter.jpeg"
+                                    alt="Scooter advertisement with 50% discount" />
+                                <h2 class="title-center description text-color-red">
+                                    Try Tripia scooter now at a 50% discount for the first trip
                                 </h2>
                             </div>
                         </article>
                     </li>
                 </ul>
-                <!-- ---------------------------------------- -->
             </section>
 
             <section class="section">
                 <div class="section-header">
-                    <h2 class="section-title">
-                        What Are Your Plans Today?
-                    </h2>
+                    <h2 class="section-title">What Are Your Plans Today?</h2>
                 </div>
                 <ul class="category-list">
                     <li class="category-list-item">
-                        <img src="/assets/images/svg/map.svg" alt="trip">
+                        <img src="/assets/images/svg/map.svg" alt="Map icon representing trips">
                         <a href="#saving-trips" class="category">Saving Trips</a>
                     </li>
                     <li class="category-list-item">
-                        <img src="/assets/images/svg/location.svg" alt="trip">
+                        <img src="/assets/images/svg/location.svg" alt="Location pin icon representing trips">
                         <a href="#starting-close-trips" class="category">Starting Close Trips</a>
                     </li>
                 </ul>
             </section>
-            <!-- ---------------------------------------- -->
+
             <section class="section">
                 <div class="section-header">
-                    <h2 class="section-title">
-                        Current Journeys
-                    </h2>
+                    <h2 class="section-title">Current Journeys</h2>
                 </div>
                 <section class="section-travel-card">
-                    <!-- ---------------------------------------- -->
                     <div class="travel-card">
                         <div class="date">10/01/2024</div>
                         <div class="route">
@@ -111,7 +106,7 @@
                                 <div class="time">05:30 PM</div>
                             </div>
                             <div class="icon">
-                                <img src="/assets/images/svg/car-small.svg" alt="Car" />
+                                <img src="/assets/images/svg/car-small.svg" alt="Small car icon" />
                             </div>
                             <div class="location">
                                 <div>New Cairo</div>
@@ -121,7 +116,7 @@
                         </div>
                         <div class="details">
                             <div class="detail">
-                                <div class="detail-value">2 Seat</div>
+                                <div class="detail-value">2 Seats</div>
                                 <div class="detail-info">(remaining out of 5)</div>
                             </div>
                             <div class="detail">
@@ -130,8 +125,8 @@
                             </div>
                         </div>
                         <div class="profile">
-                            <img src="/assets/images/svg/profile-user-small.svg" alt="Muhammad Abdullah"
-                                class="profile-img">
+                            <img src="/assets/images/svg/profile-user-small.svg"
+                                alt="Profile picture of Muhammad Abdullah" class="profile-img">
                             <div class="profile-info">
                                 <div class="name">Muhammad Abdullah</div>
                                 <div class="license">License 1028723</div>
@@ -142,78 +137,46 @@
                             </div>
                         </div>
                         <div class="actions">
-                            <button class="btn reserve">Reserve a place</button>
-                            <a href="javascript:void(0)" class="details-link">Details →</a>
+                            <button class="btn reserve" aria-label="Reserve a place">Reserve a place</button>
+                            <a href="javascript:void(0)" class="details-link" aria-label="View details">Details →</a>
                         </div>
                     </div>
-                    <!-- ---------------------------------------- -->
                 </section>
             </section>
-            <!-- ---------------------------------------- -->
         </main>
 
         <footer class="app-footer">
             <nav class="menu-bar">
-
-                <!-- #################################################################### -->
-                <a href="javascript:void(0)" class="menu-bar-item menu-bar-item--active">
-                    <!--start svg city-->
-                    <img src="/assets/images/svg/home-black.svg" alt="home">
-
-                    <!--end svg home-->
-                    <span class="menu-bar-item-text text-color-black">
-                        Home
-                    </span>
+                <a href="javascript:void(0)" class="menu-bar-item menu-bar-item--active" aria-label="Home">
+                    <img src="/assets/images/svg/home-black.svg" alt="Home icon">
+                    <span class="menu-bar-item-text text-color-black">Home</span>
                 </a>
-
-                <a href="javascript:void(0)" class="menu-bar-item menu-bar-item--active">
-                    <!--start svg city-->
-                    <img src="/assets/images/svg/car.svg" alt="trip">
-
-                    <!--end svg city-->
-                    <span class="menu-bar-item-text">
-                        Trips
-                    </span>
+                <a href="javascript:void(0)" class="menu-bar-item" aria-label="Trips">
+                    <img src="/assets/images/svg/car.svg" alt="Car icon representing trips">
+                    <span class="menu-bar-item-text">Trips</span>
                 </a>
-
-                <a href="javascript:void(0)" class="menu-bar-item menu-bar-item--active">
-                    <!--start svg city-->
-                    <img src="/assets/images/svg/travel.svg" alt="travel">
-
-                    <!--end svg city-->
-                    <span class="menu-bar-item-text">
-                        Travel
-                    </span>
+                <a href="javascript:void(0)" class="menu-bar-item" aria-label="Travel">
+                    <img src="/assets/images/svg/travel.svg" alt="Travel icon">
+                    <span class="menu-bar-item-text">Travel</span>
                 </a>
-
-                <a href="javascript:void(0)" class="menu-bar-item menu-bar-item--active click-setting">
-                    <!--start svg city-->
-                    <img src="/assets/images/svg/setting.svg" alt="Setting">
-
-                    <!--end svg city-->
-                    <span class="menu-bar-item-text">
-                        Setting
-                    </span>
+                <a href="javascript:void(0)" class="menu-bar-item click-setting" aria-label="Settings">
+                    <img src="/assets/images/svg/setting.svg" alt="Settings icon">
+                    <span class="menu-bar-item-text">Settings</span>
                 </a>
-
-                <!-- #################################################################### -->
             </nav>
         </footer>
     </div>
-    <script>
 
+    <script>
         function renderForSettingPage() {
             window.location.href = '/setting';
         }
 
         document.querySelectorAll('.click-setting').forEach(function (element) {
             element.addEventListener('click', function () {
-                // ------------------------------------------
                 renderForSettingPage();
-                // ------------------------------------------
             });
         });
-
     </script>
 </body>
 

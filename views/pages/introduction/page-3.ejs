@@ -14,16 +14,17 @@
     <div class="app">
 
         <header class="app-header">
-            <button class="app-header-btn btn-skip btn-skip-link">
+            <button class="app-header-btn btn-skip btn-skip-link" aria-label="Skip to next page">
                 Skip
             </button>
         </header>
 
         <main class="app-body">
+            <!-- Start content section -->
             <section class="section">
                 <div class="section-header">
                     <h1 class="section-title">
-                        introduction 3
+                        Explore More
                     </h1>
                 </div>
 
@@ -37,17 +38,24 @@
                     <p>We will deliver to you at the right time at the best price.</p>
                 </div>
             </section>
+            <!-- End content section -->
 
+            <!-- Start section icon -->
             <section class="section">
-                <img src="/assets/images/svg/red-car.svg" alt="Red Car">
+                <img src="/assets/images/svg/red-car.svg" alt="Illustration of a red car">
             </section>
+            <!-- End section icon -->
+
         </main>
 
+        <!-- Start section footer -->
         <footer class="app-footer">
-            <a href="/introduction/page-4" class="menu-bar-item skip-icon btn-skip-link">
-                <img src="/assets/images/svg/skip.svg" alt="Skip Icon">
+            <a href="/introduction/page-4" class="menu-bar-item skip-icon btn-skip-link" aria-label="Go to next page">
+                <img src="/assets/images/svg/skip.svg"
+                    alt="Arrow icon pointing right, indicating skipping ahead to the next page">
             </a>
         </footer>
+        <!-- End section footer -->
 
     </div>
 
@@ -57,7 +65,6 @@
             if (skipButton) {
                 skipButton.addEventListener('click', function (event) {
                     event.preventDefault();
-
                     window.location.href = '/introduction/page-4';
                 });
             }

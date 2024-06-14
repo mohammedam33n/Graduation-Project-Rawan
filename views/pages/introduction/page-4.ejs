@@ -14,7 +14,7 @@
     <div class="app">
 
         <header class="app-header">
-            <button class="app-header-btn btn-skip btn-skip-link">
+            <button class="app-header-btn btn-skip btn-skip-link" aria-label="Skip to login">
                 Skip
             </button>
         </header>
@@ -22,12 +22,12 @@
         <main class="app-body">
             <div class="section-header">
                 <h1 class="section-title">
-                    introduction 4
+                    Next
                 </h1>
             </div>
 
             <section class="section-logo">
-                <img src="/assets/images/svg/logo-2.svg" alt="Red Car">
+                <img src="/assets/images/svg/logo-2.svg" alt="Company logo featuring a red car">
             </section>
 
         </main>
@@ -45,7 +45,7 @@
                 </div>
 
                 <a href="/auth/login" class="menu-bar-item skip-icon btn-skip-link">
-                    <img src="/assets/images/svg/skip.svg" alt="Skip Icon">
+                    <img src="/assets/images/svg/skip.svg" alt="Arrow icon pointing right, indicating skipping ahead to login">
                 </a>
             </section>
         </footer>
@@ -58,7 +58,6 @@
             if (skipButton) {
                 skipButton.addEventListener('click', function (event) {
                     event.preventDefault();
-
                     window.location.href = '/auth/login';
                 });
             }

@@ -107,9 +107,11 @@ button:hover {
 }
 
 .link-color-grey-second {
-    text-decoration: underline;
-    color:rgb(85 79 79);
+    /* text-decoration: underline; */
+    text-decoration: none;
+    color: rgb(33 31 31);
 }
+
 
 .text-color-grey {
     color: grey;
@@ -135,6 +137,7 @@ button:hover {
 .forget-password-link {
     margin-left: 38px;
 }
+
 
 .create-account-link {
     margin: 20px;

@@ -4,9 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        profile detail
-    </title>
+    <title>Profile Detail</title>
     <link rel="stylesheet" href="/assets/css/profile-detail-style.css">
 </head>
 
@@ -17,42 +15,41 @@
                 <div class="card">
                     <div class="card-content">
                         <div class="slider-image">
-                            <img src="/assets/images/profile.png" alt="Logo" />
+                            <img src="/assets/images/profile.png" alt="User Profile Picture" />
                             <div id="message" style="display: none; color: green; margin-top: 10px;">
                                 Data has been updated successfully.
                             </div>
                         </div>
                         <div class="container">
-
-
                             <div id="loginForm">
-
                                 <div class="input-container">
-                                    <img class="icon" src="/assets/images/svg/profile-small-2.svg" alt="">
-                                    <input class="input-field" type="text" value="User Name" readonly>
+                                    <img class="icon" src="/assets/images/svg/profile-small-2.svg" alt="User Icon">
+                                    <input class="input-field" type="text" value="User Name"
+                                        aria-label="Enter your user name" readonly>
                                 </div>
 
                                 <div class="input-container">
-                                    <img class="icon" src="/assets/images/svg/phone.svg" alt="">
-                                    <input class="input-field" type="text" value="+0123456789" readonly>
+                                    <img class="icon" src="/assets/images/svg/phone.svg" alt="Phone Icon">
+                                    <input class="input-field" type="text" value="+0123456789"
+                                        aria-label="Enter your phone" readonly>
                                 </div>
 
                                 <div class="input-container">
-                                    <img class="icon" src="/assets/images/svg/e-mail.svg" alt="">
-                                    <input class="input-field" type="email" value="user@gmail.com" readonly>
+                                    <img class="icon" src="/assets/images/svg/e-mail.svg" alt="Email Icon">
+                                    <input class="input-field" type="email" value="user@gmail.com"
+                                        aria-label="Enter your email" readonly>
                                 </div>
 
                                 <div class="input-container">
-                                    <img class="icon" src="/assets/images/svg/map-small.svg" alt="">
-                                    <input class="input-field" type="text" value="Giza,Cairo" readonly>
+                                    <img class="icon" src="/assets/images/svg/map-small.svg" alt="Location Icon">
+                                    <input class="input-field" type="text" value="Giza, Cairo"
+                                        aria-label="Enter your address" readonly>
                                 </div>
 
                                 <button type="submit" class="btn-submit btn-save">
                                     Save
                                 </button>
                             </div>
-
-
                         </div>
                     </div>
                 </div>
@@ -61,25 +58,19 @@
     </div>
 
     <script>
-
         function renderForSettingPage() {
             window.location.href = '/setting';
         }
 
-
         document.querySelectorAll('.btn-save').forEach(function (element) {
             element.addEventListener('click', function () {
-                // ------------------------------------------
                 // Show the update message
                 document.getElementById('message').style.display = 'block';
 
                 // Redirect after 3 seconds
                 setTimeout(renderForSettingPage, 2000);
-                // ------------------------------------------
             });
         });
-
-
     </script>
 </body>
 

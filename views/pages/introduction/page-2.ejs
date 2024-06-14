@@ -14,22 +14,20 @@
     <div class="app">
 
         <header class="app-header">
-            <button class="app-header-btn btn-skip">
+            <button class="app-header-btn btn-skip" aria-label="Skip to next page">
                 Skip
             </button>
         </header>
 
         <main class="app-body">
-
-
             <div class="section-header">
                 <h1 class="section-title">
-                    introduction 2
+                    Explore More
                 </h1>
             </div>
 
             <section class="section">
-                <img src="/assets/images/svg/car-motorly-user.svg" alt="Red Car">
+                <img src="/assets/images/svg/car-motorly-user.svg" alt="Illustration of a red car with a motorly user">
             </section>
 
             <div class="section-header">
@@ -44,13 +42,13 @@
         </main>
 
         <footer class="app-footer">
-            <a href="/introduction/page-3" class="menu-bar-item skip-icon btn-skip-link">
-                <img src="/assets/images/svg/skip.svg" alt="Skip Icon">
+            <a href="/introduction/page-3" class="menu-bar-item skip-icon btn-skip-link" aria-label="Go to next page">
+                <img src="/assets/images/svg/skip.svg"
+                    alt="Arrow icon pointing right, indicating skipping ahead to the next page">
             </a>
         </footer>
 
     </div>
-
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -58,7 +56,6 @@
             if (skipButton) {
                 skipButton.addEventListener('click', function (event) {
                     event.preventDefault();
-
                     window.location.href = '/introduction/page-3';
                 });
             }
