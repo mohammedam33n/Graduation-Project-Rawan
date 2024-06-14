@@ -1,28 +1,19 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="/assets/css/home-style.css">
-
-    <title>
-        Home
-    </title>
-
-
     <title>Home</title>
 </head>
 
 <body>
-
     <div class="app">
-
-
         <header class="app-header">
-            <button class="app-header-btn app-header-btn--active">
+            <button class="app-header-btn app-header-btn--active" aria-label="Menu">
                 <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor"
-                    viewBox="0 0 256 256">
+                    viewBox="0 0 256 256" aria-hidden="true">
                     <rect width="256" height="256" fill="none"></rect>
                     <line x1="40" y1="128" x2="216" y2="128" stroke="currentColor" stroke-linecap="round"
                         stroke-linejoin="round" stroke-width="16"></line>
@@ -32,9 +23,9 @@
                         stroke-linejoin="round" stroke-width="16"></line>
                 </svg>
             </button>
-            <button class="app-header-btn app-header-btn--notification">
+            <button class="app-header-btn app-header-btn--notification" aria-label="Notifications">
                 <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor"
-                    viewBox="0 0 256 256">
+                    viewBox="0 0 256 256" aria-hidden="true">
                     <rect width="256" height="256" fill="none"></rect>
                     <line x1="96" y1="224" x2="160" y2="224" fill="none" stroke="currentColor" stroke-linecap="round"
                         stroke-linejoin="round" stroke-width="16"></line>
@@ -47,58 +38,50 @@
         </header>
 
         <main class="app-body">
+
             <section class="section">
-                <!-- <div class="section-header">
-
-                </div> -->
+                <!-- ---------------------------------------- -->
                 <ul class="product-list">
-                    <!-- ---------------------------------------- -->
                     <li class="product-list-item">
                         <article class="product">
                             <div class="slider-image">
-                                <img src="/assets/images/ads/gradient.png" />
-                                <h2 class="title-center description">
-                                    Try Tripia scotr now at a 50% discount for the first trip
+                                <img src="/assets/images/ads/gradient.png" alt="Scooter ad with 50% discount" />
+                                <h2 class="title-center description text-color-red">
+                                    Try Tripia scooter now at a 50% discount for the first trip
                                 </h2>
                             </div>
                         </article>
                     </li>
-
                     <li class="product-list-item">
                         <article class="product">
                             <div class="slider-image">
-                                <img src="/assets/images/ads/gradient.png" />
+                                <img src="/assets/images/ads/gradient.png" alt="Scooter ad with 90% discount" />
                                 <h2 class="title-center description">
-                                    discount 90% for first trip
+                                    Discount 90% for first trip
                                 </h2>
                             </div>
                         </article>
                     </li>
-
                     <li class="product-list-item">
                         <article class="product">
                             <div class="slider-image">
-                                <img src="/assets/images/ads/gradient.png" />
+                                <img src="/assets/images/ads/gradient.png" alt="Scooter ad with 90% discount" />
                                 <h2 class="title-center description">
-                                    discount 90% for first trip
+                                    Discount 90% for first trip
                                 </h2>
                             </div>
                         </article>
                     </li>
-                    <!-- ---------------------------------------- -->
-
                 </ul>
+                <!-- ---------------------------------------- -->
             </section>
 
-
-            <!-- ---------------------------------------- -->
             <section class="section">
                 <div class="section-header">
                     <h2 class="section-title">
-                        What Are Your Plans Today ?
+                        What Are Your Plans Today?
                     </h2>
                 </div>
-
                 <ul class="category-list">
                     <li class="category-list-item">
                         <img src="/assets/images/svg/map.svg" alt="trip">
@@ -111,17 +94,12 @@
                 </ul>
             </section>
             <!-- ---------------------------------------- -->
-
-
-
-            <!-- ---------------------------------------- -->
             <section class="section">
                 <div class="section-header">
                     <h2 class="section-title">
                         Current Journeys
                     </h2>
                 </div>
-
                 <section class="section-travel-card">
                     <!-- ---------------------------------------- -->
                     <div class="travel-card">
@@ -160,7 +138,7 @@
                             </div>
                             <div class="rating">
                                 <div class="stars">4.5 ⭐</div>
-                                <div class="applications">22 order</div>
+                                <div class="applications">22 orders</div>
                             </div>
                         </div>
                         <div class="actions">
@@ -170,12 +148,8 @@
                     </div>
                     <!-- ---------------------------------------- -->
                 </section>
-
             </section>
             <!-- ---------------------------------------- -->
-
-
-
         </main>
 
         <footer class="app-footer">
@@ -226,7 +200,6 @@
             </nav>
         </footer>
     </div>
-
     <script>
 
         function renderForSettingPage() {
@@ -240,8 +213,6 @@
                 // ------------------------------------------
             });
         });
-
-
 
     </script>
 </body>

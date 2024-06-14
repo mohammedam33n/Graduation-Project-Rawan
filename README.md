@@ -1,16 +1,15 @@
+## Prerequisites
+Before you start, make sure you have the following installed:
 
-
-## Prerequisites ##
-Before you start, ensure you have the following installed:
 - [Node.js](https://nodejs.org/) (v14.x or later)
 - [npm](https://www.npmjs.com/) (comes with Node.js)
 
-## Installation ##
+## Installation
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/mohammedam33n/node-app
-    cd node-app
+    git clone https://github.com/Rouvie/tripiaApp
+    cd tripiaApp
     ```
 
 2. **Install dependencies**:
@@ -18,58 +17,59 @@ Before you start, ensure you have the following installed:
     npm install
     ```
 
-## Configuration ##
+## Running the Project
 
-1. **Environment Variables**:
-    Create a `.env` file in the root directory and add your environment variables. For example:
-    ```env
-    PORT=3000
-    DATABASE_URL=your-database-url
-    JWT_SECRET=your-secret-key
-    ```
-
-## Running the Project ##
+To run the project, follow these steps:
 
 1. **Start the development server**:
     ```bash
     npm run dev
     ```
-    This will start the server with nodemon for automatic restarting.
+    This command starts the server using nodemon for automatic restarting during development.
 
 2. **Start the production server**:
     ```bash
     node app.js
     ```
+    Use this command to run the server in production mode.
 
-## Testing ##
+## API Endpoints
 
-## API Endpoints ##
+### Introduction
 
-- **Introduction**:
-    - [Page 1](http://127.0.0.1:3000/introduction/page-1)
-    - [Page 2](http://127.0.0.1:3000/introduction/page-2)
-    - [Page 3](http://127.0.0.1:3000/introduction/page-3)
+- [Page 1](http://127.0.0.1:3000/introduction/page-1)
+- [Page 2](http://127.0.0.1:3000/introduction/page-2)
+- [Page 3](http://127.0.0.1:3000/introduction/page-3)
 
-- **Profile**:
-    - [Detail](http://127.0.0.1:3000/profile/detail)
-    - [Show](http://127.0.0.1:3000/profile/show/(:id))
-    - [Edit](http://127.0.0.1:3000/profile/edit/(:id))
+### Profile
 
-- **Trip**:
-    - [List](http://127.0.0.1:3000/trip/list)
-    - [Show](http://127.0.0.1:3000/trip/show/(:id))
+- [Detail](http://127.0.0.1:3000/profile/detail)
+- [Show](http://127.0.0.1:3000/profile/show/(:id))
+- [Edit](http://127.0.0.1:3000/profile/edit/(:id))
 
-- **Auth**:
-    - [Login](http://127.0.0.1:3000/auth/login)
-    - [Register](http://127.0.0.1:3000/auth/register)
+### Trip
 
-## Dummy User Info for Demonstration ##
+- [List](http://127.0.0.1:3000/trip/list)
+- [Show](http://127.0.0.1:3000/trip/show/(:id))
+
+### Auth
+
+- [Login](http://127.0.0.1:3000/auth/login)
+- [Register](http://127.0.0.1:3000/auth/register)
+
+## Testing
+
+Add instructions on how to run tests if applicable.
+
+## Dummy User Info for Demonstration
+
+Use the following credentials to log in and test the application:
+
 - Email: `test@example.com`
 - Password: `password`
 
+## Figma
 
+Explore the design details on Figma:
 
-## Figma ##
-Add relevant Figma links or details here.
-- [Figma](https://www.figma.com/design/Z3nEk4JK3vR3m5TFr066d5/TRIPIA-FINAL)
-
+- [Figma Design](https://www.figma.com/design/Z3nEk4JK3vR3m5TFr066d5/TRIPIA-FINAL)
